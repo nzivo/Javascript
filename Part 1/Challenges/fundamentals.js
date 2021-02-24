@@ -150,13 +150,13 @@ const dolphinAverage = (dolphinOne+dolphinTwo+dolphinThree)/3;
 const koalaAverage = (koalaOne+koalaTwo+koalaThree)/3;
 
 if ((dolphinAverage > koalaAverage) && dolphinAverage >= 100) {
-    console.log(`Dolphin Wins`);
+    console.log(`Dolphin Wins the 🏆`);
 } else if ((koalaAverage > dolphinAverage)  && koalaAverage >= 100) {
-    console.log(`Koalas Win`);
+    console.log(`Koalas Win 🏆`);
 }else if ((dolphinAverage === koalaAverage) && dolphinAverage >= 100 && koalaAverage >= 100){
-    console.log(`there is a draw`);
+    console.log(`there is a draw 🥇🥇`);
 }else{
-    console.log(`there is no winner`);
+    console.log(`there is no winner 👎`);
 }
 
 
