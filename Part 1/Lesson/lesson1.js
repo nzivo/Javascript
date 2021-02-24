@@ -138,7 +138,7 @@ situation
 
 /*
 ===========================================================================
-                 TASK 
+                 TASK 8
 ===========================================================================
 1. Comment out the previous code so the prompt doesn't get in the way
 2. Let's say Sarah is looking for a new country to live in. She wants to live in a
@@ -160,6 +160,28 @@ if ((language === `English`) && (population < 50000000) && !isIsland ) {
     console.log(`${country} does not meet your criteria`);
 }
 
+/*
+===========================================================================
+                 TASK : 9 
+===========================================================================
+Converting switch to if-else block
+*/
+const day = `thursday`;
+
+if(day === `monday`){
+    console.log(`Plan Course Structure`);
+    console.log(`Go to coding meetup`);
+}else if(day === `tuesday`){
+    console.log(`Prepare theory videos`);
+}else if (day === `wednesday` || day === `thursday`) {
+    console.log(`Write code examples`);
+}else if (day === `friday`) {
+    console.log(`Record videos`);
+}else if (day === `saturday` || day === `sunday`) {
+    console.log(`Enjoy the weekend`);
+}else{
+    console.log(`Your day is not valid`);
+}
 
 /*
 ===========================================================================
