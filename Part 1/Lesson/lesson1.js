@@ -233,10 +233,3 @@ one word changes between these two sentences!
 */
 
 console.log(`${population > 33000000 ? `${country}'s population is above average` : `${country}'s population is below average`}`);
-
-/*
-===========================================================================
-                 TASK 
-===========================================================================
-
-*/
