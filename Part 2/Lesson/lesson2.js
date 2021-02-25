@@ -44,22 +44,22 @@ the same populations)
 const WoldPopulation = 7900;
 
 function percentageOfWorld1(population){
-    return console.log((population/WoldPopulation)*100 + `%`);
+    return population/WoldPopulation*100;
 }
 console.log('Function Declaration');
-percentageOfWorld1(1441);
-percentageOfWorld1(48);
-percentageOfWorld1(30);
+console.log(percentageOfWorld1(1441));
+console.log(percentageOfWorld1(48));
+console.log(percentageOfWorld1(30));
 
 // Function Expression
 const percentageOfWorld2 = function (population) {
-    return console.log((population/WoldPopulation)*100 + `%`);
+    return population/WoldPopulation*100;
 }
 
 console.log('Function Expression');
-percentageOfWorld2(1441);
-percentageOfWorld2(48);
-percentageOfWorld2(30);
+console.log(percentageOfWorld2(1441));
+console.log(percentageOfWorld2(48));
+console.log(percentageOfWorld2(30));
 
 /*
 ===========================================================================
@@ -69,11 +69,35 @@ percentageOfWorld2(30);
 'percentageOfWorld3'
 */
 
-const percentageOfWorld3 = population => console.log((population/WoldPopulation)*100 + ` %`);
+const percentageOfWorld3 = population => population/WoldPopulation*100;
 console.log('Arrow Functions');
-percentageOfWorld3(1441);
-percentageOfWorld3(48);
-percentageOfWorld3(30);
+console.log(percentageOfWorld3(1441));
+console.log(percentageOfWorld3(48));
+console.log(percentageOfWorld3(30));
+
+/*
+===========================================================================
+                 TASK 
+===========================================================================
+1. Create a function called 'describePopulation'. Use the function type you
+like the most. This function takes in two arguments: 'country' and
+'population', and returns a string like this: 'China has 1441 million people,
+which is about 18.2% of the world.'
+2. To calculate the percentage, 'describePopulation' call the
+'percentageOfWorld1' you created earlier
+3. Call 'describePopulation' with data for 3 countries of your choice
+*/
+
+function describePopulation(country, population){
+    const percentageDescribe = percentageOfWorld1(population);
+    return console.log(`${country} has ${population} million people, which is about ${percentageDescribe} % of the world.`);
+}
+
+console.log('Calling functions in funtions');
+describePopulation('China', 1441);
+describePopulation('Kenya', 48);
+describePopulation('Tanzania', 30);
+
 
 /*
 ===========================================================================
