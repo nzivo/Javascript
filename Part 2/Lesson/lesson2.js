@@ -46,7 +46,7 @@ const WoldPopulation = 7900;
 function percentageOfWorld1(population){
     return console.log((population/WoldPopulation)*100 + `%`);
 }
-
+console.log('Function Declaration');
 percentageOfWorld1(1441);
 percentageOfWorld1(48);
 percentageOfWorld1(30);
@@ -56,9 +56,25 @@ const percentageOfWorld2 = function (population) {
     return console.log((population/WoldPopulation)*100 + `%`);
 }
 
+console.log('Function Expression');
 percentageOfWorld2(1441);
 percentageOfWorld2(48);
 percentageOfWorld2(30);
+
+/*
+===========================================================================
+                 TASK 
+===========================================================================
+1. Recreate the last assignment, but this time create an arrow function called
+'percentageOfWorld3'
+*/
+
+const percentageOfWorld3 = population => console.log((population/WoldPopulation)*100 + ` %`);
+console.log('Arrow Functions');
+percentageOfWorld3(1441);
+percentageOfWorld3(48);
+percentageOfWorld3(30);
+
 /*
 ===========================================================================
                  TASK 
