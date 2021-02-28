@@ -157,11 +157,27 @@ properties 'country', 'capital', 'language', 'population' and
 const myCountry1 = {
     country: 'Kenya',
     capital: 'Nairobi',
-    language: 'Kiswahili',
+    language: 'Swahili',
     population: 48,
     neighbours: ['Uganda', 'Tanzania', 'Somalia', 'Ethiopia', 'South Sudan']
 };
 console.log(myCountry1);
+
+/*
+===========================================================================
+                 TASK 8
+===========================================================================
+1. Using the object from the previous assignment, log a string like this to the
+console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries
+and a capital called Helsinki.'
+2. Increase the country's population by two million using dot notation, and then
+decrease it by two million using brackets notation.
+*/
+console.log(`${myCountry1.country} has ${myCountry1.population} million ${myCountry1.language}-speaking people,
+${myCountry1.neighbours.length} neighbouring countries and a capital called ${myCountry1.capital}.`);
+
+console.log(myCountry1.population + 2);
+console.log(myCountry1['population'] - 2);
 
 /*
 ===========================================================================
