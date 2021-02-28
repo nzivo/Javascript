@@ -63,7 +63,7 @@ console.log(percentageOfWorld2(30));
 
 /*
 ===========================================================================
-                 TASK 
+                 TASK 3
 ===========================================================================
 1. Recreate the last assignment, but this time create an arrow function called
 'percentageOfWorld3'
@@ -77,7 +77,7 @@ console.log(percentageOfWorld3(30));
 
 /*
 ===========================================================================
-                 TASK 
+                 TASK 4
 ===========================================================================
 1. Create a function called 'describePopulation'. Use the function type you
 like the most. This function takes in two arguments: 'country' and
@@ -98,6 +98,24 @@ describePopulation('China', 1441);
 describePopulation('Kenya', 48);
 describePopulation('Tanzania', 30);
 
+/*
+===========================================================================
+                 TASK 5
+===========================================================================
+1. Create an array containing 4 population values of 4 countries of your choice.
+You may use the values you have been using previously. Store this array into a
+variable called 'populations'
+2. Log to the console whether the array has 4 elements or not (true or false)
+3. Create an array called 'percentages' containing the percentages of the
+world population for these 4 population values. Use the function
+'percentageOfWorld1' that you created earlier to compute the 4
+percentage values
+*/
+const populations = [48, 1441, 30, 15];
+console.log(populations[populations.length - 1] != null); // populations.length === 4
+const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]),
+percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
+console.log(percentages[0], percentages[1], percentages[2], percentages[3] );
 
 /*
 ===========================================================================
