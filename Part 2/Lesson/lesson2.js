@@ -159,7 +159,23 @@ const myCountry1 = {
     capital: 'Nairobi',
     language: 'Swahili',
     population: 48,
-    neighbours: ['Uganda', 'Tanzania', 'Somalia', 'Ethiopia', 'South Sudan']
+    neighbours: ['Uganda', 'Tanzania', 'Somalia', 'Ethiopia', 'South Sudan'],
+    describe: function(){
+        return `${this.country} has ${this.population} million ${this.language}-speaking people,
+${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+    },
+    checkIsland: function() {
+        //WAY ONE WORKS!!
+
+        // if (this.neighbours.length === 0) {
+        //     return this.isIsland = true;
+        // }else{
+        //     return this.isIsland = false;
+        // }
+
+        // USING ITENARY OPERATOR
+        console.log(this.neighbours.length === 0 ? this.isIsland = true : this.isIsland = false);
+    }
 };
 console.log(myCountry1);
 
@@ -178,6 +194,22 @@ ${myCountry1.neighbours.length} neighbouring countries and a capital called ${my
 
 console.log(myCountry1.population + 2);
 console.log(myCountry1['population'] - 2);
+
+/*
+===========================================================================
+                 TASK 9
+===========================================================================
+1. Add a method called 'describe' to the 'myCountry' object. This method
+will log a string to the console, similar to the string logged in the previous
+assignment, but this time using the 'this' keyword.
+2. Call the 'describe' method
+3. Add a method called 'checkIsland' to the 'myCountry' object. This
+method will set a new property on the object, called 'isIsland'.
+'isIsland' will be true if there are no neighbouring countries, and false if
+there are. Use the ternary operator to set the property.
+*/
+console.log(myCountry1.describe());
+myCountry1.checkIsland();
 
 /*
 ===========================================================================
