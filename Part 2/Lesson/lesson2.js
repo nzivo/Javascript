@@ -146,6 +146,22 @@ if (!neighbours.includes('Germany')) {
 neighbours[neighbours.indexOf('Tanzania')] = 'Republic of Tanzania';
 console.log(neighbours);
 
+/*
+===========================================================================
+                 TASK 7
+===========================================================================
+1. Create an object called 'myCountry' for a country of your choice, containing
+properties 'country', 'capital', 'language', 'population' and
+'neighbours' (an array like we used in previous assignments)
+*/
+const myCountry1 = {
+    country: 'Kenya',
+    capital: 'Nairobi',
+    language: 'Kiswahili',
+    population: 48,
+    neighbours: ['Uganda', 'Tanzania', 'Somalia', 'Ethiopia', 'South Sudan']
+};
+console.log(myCountry1);
 
 /*
 ===========================================================================
