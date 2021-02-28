@@ -264,7 +264,18 @@ for (let i = 0; i < listOfNeighbours.length; i++) {
 
 /*
 ===========================================================================
-                 TASK 
+                 TASK 13
 ===========================================================================
-
+1. Recreate the challenge from the lecture 'Looping Arrays, Breaking and Continuing',
+but this time using a while loop (call the array 'percentages3')
+2. Reflect on what solution you like better for this task: the for loop or the while
+loop?
 */
+let percentages3 = [];
+let i = 0;
+while (i < populations.length) {
+    const percent = percentageOfWorld1(populations[i]);
+    percentages3.push(percent);
+    i++;
+}
+console.log(percentages3);
